@@ -32,7 +32,7 @@ h2 {
 }
 .button:hover {
     color: rgb(255, 255, 255);
-    background-color: black;
+    background-color: rgb(72, 3, 222);
 }
 
 .image-container{

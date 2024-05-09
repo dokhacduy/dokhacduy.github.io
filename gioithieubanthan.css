@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding:0;
+    background-color: #85d2ff;
+    
+}
+#main-cotent{
+    display: flex;
+}
+#content{
+    flex-basis: 70%;
+}
+#sidebar{
+    flex-basis: 30%;
+}
+

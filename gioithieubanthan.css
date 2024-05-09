@@ -2,16 +2,40 @@ body {
     font-family: Arial, sans-serif;
     margin:0;
     padding:0;
-    background-color: #85d2ff;
-    
+    background-color: #e0f2ff;
+    color: rgb(0, 0, 0);
 }
-#main-cotent{
-    display: flex;
-}
-#content{
-    flex-basis: 70%;
-}
-#sidebar{
-    flex-basis: 30%;
+.avatar {
+    border-radius: 100px; /*độ cong*/
 }
 
+h2 {
+    font-family: "Borel", cursive; /*lấy từ google fonts*/
+    font-weight: 40;
+    font-style: normal;
+  }
+
+
+.button {
+    margin-bottom: 10px; /*căn khoảng cách*/
+    background-color: white;
+    border: 0;/*mất viền*/
+    width: 300px; /*chiều rộng*/
+    padding: 15px; /*căn khoảng cách*/  
+    border-radius: 100px; 
+    font-family: 'Roboto Condensed', cursive;/*lấy từ google fonts*/
+    font-weight: bold;/*in đậm*/
+    font-size: 15px;/*cỡ chữ*/
+    transition-duration: 0.1s;/*Thời gian chạy nền*/
+    transition-property: color, background-color;
+    box-shadow: 0px 11px 47px;/*đỗ bóng*/
+}
+.button:hover {
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+
+.image-container{
+    float: right;
+    border: 2px solid #ffff00;
+}

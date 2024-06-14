@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+.resized-image{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
+.navbar {
+    margin-bottom: 20px;
+    background-color:#110c0c
+    
+}
+.card {
+    margin-bottom: 20px;
+    border: 0;
+    
+    
+}
+footer {
+    background-color:#ffffff ;
+    padding: 20px 0;
+}
+
+.button {
+    margin-bottom: px; /*căn khoảng cách*/
+    background-color: rgb(255, 255, 255);
+    border: 0;/*mất viền*/
+    width: 300px; /*chiều rộng*/
+    padding: 15px; /*căn khoảng cách*/  
+    border-radius: 100px; 
+    font-size: 15px;/*cỡ chữ*/
+    transition-duration: 0.3s;/*Thời gian chạy nền*/
+    box-shadow: 0px 11px 47px;
+}
+.button i {
+    margin-right: 10px;
+}
+.button:hover {
+    background-color: #1671e0;
+    color: #ffffff
+}
+
+.indented{
+    text-indent: 30px;
+    margin-left: 20px;
+}
+h4{
+    text-align: center;
+}

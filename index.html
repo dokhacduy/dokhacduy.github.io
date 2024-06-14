@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Bán Hàng</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+          <a class="navbar-brand" href="index.html"><img src="Dshop.jpg" class="resized-image"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item active"><a class="nav-link" href="index.html">Trang Chủ </a></li>
+                <li class="nav-item"><a class="nav-link" href="gioithieu.html">Giới thiệu</a></li>
+                <li class="nav-item"><a class="nav-link" href="lienhe.html">Liên Hệ</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#cartModal">Giỏ Hàng</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-sm">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://www.sporter.vn/wp-content/uploads/2017/06/VN_Chelsea-10.jpg" class="card-img-top" alt="Áo bóng đá Chelsea xanh sân nhà">
+                    <div class="card-body">
+                        <h5 class="card-title">Áo bóng đá Chelsea xanh sân nhà </h5>
+                        <p class="card-text">140,000đ</p>
+                        <a href="#" class="btn btn-primary" onclick="addToCart('Áo bóng đá Chelsea xanh sân nhà')">Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://www.sporter.vn/wp-content/uploads/2017/06/VN_Chelsea-20.jpg" class="card-img-top" alt="Áo bóng đá Chelsea xanh đen sân khách">
+                    <div class="card-body">
+                        <h5 class="card-title">Áo bóng đá Chelsea xanh đen sân khách </h5>
+                        <p class="card-text">140,000đ</p>
+                        <a href="#" class="btn btn-primary" onclick="addToCart('Áo bóng đá Chelsea xanh đen sân khách')">Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://www.sporter.vn/wp-content/uploads/2023/08/Ao-manchester-united-trang-2023-0.jpg" class="card-img-top" alt="Áo bóng đá MU sân khách mẫu ba">
+                    <div class="card-body">
+                        <h5 class="card-title">Áo bóng đá MU sân khách mẫu ba</h5>
+                        <p class="card-text">140,000đ</p>
+                        <a href="#" class="btn btn-primary" onclick="addToCart('Áo bóng đá MU sân khách mẫu ba')">Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://www.sporter.vn/wp-content/uploads/2017/06/Ao-bong-da-liverpool-trang-hang-viet-nam-5.png" class="card-img-top" alt="Áo bóng đá Liverpool sân khách">
+                    <div class="card-body">
+                        <h5 class="card-title">Áo bóng đá Liverpool sân khách</h5>
+                        <p class="card-text">140,000đ</p>
+                        <a href="#" class="btn btn-primary" onclick="addToCart('Áo bóng đá Liverpool sân khách')">Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://www.sporter.vn/wp-content/uploads/2017/06/Ao-bong-da-man-city-xanh-bien-hang-viet-nam-0.png" class="card-img-top" alt="Áo Manchester City sân nhà">
+                    <div class="card-body">
+                        <h5 class="card-title">Áo Manchester City sân nhà</h5>
+                        <p class="card-text">140,000đ</p>
+                        <a href="#" class="btn btn-primary" onclick="addToCart('Áo Manchester City sân nhà')">Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://www.sporter.vn/wp-content/uploads/2017/06/Ao-bong-da-tottenham-trang-0.png" class="card-img-top" alt="Áo bóng đá Tottenham sân nhà">
+                    <div class="card-body">
+                        <h5 class="card-title">Áo bóng đá Tottenham sân nhà</h5>
+                        <p class="card-text">140,000đ</p>
+                        <a href="#" class="btn btn-primary" onclick="addToCart('Áo bóng đá Tottenham sân nhà')">Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+            
+    <!-- Cart Modal -->
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModalLabel">Giỏ Hàng</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul id="cartItems" class="list-group">
+                        <!-- Items will be added here dynamically -->
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                    <button type="button" class="btn btn-primary" onclick="checkout()">Thanh Toán</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-center text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Giới thiệu</h4>
+                    <p>Chuyên cung cấp các dịch vụ về bóng đá như thiết kế mẫu áo đấu, may áo theo yêu cầu và in ấn với công nghệ in tốt nhất hiện nay.</p>
+                    <p>Ngoài ra với quy mô xưởng may vừa và nhỏ chúng tôi đáp ứng nhanh các đơn hàng áo bóng đá tự thiết kế với thời gian nhanh nhất.</p>
+                </div>
+
+                <div class="col-md-4">
+                    <h4>Liên hệ</h4>
+                    <p><button class="button" onclick="location.href='https://www.facebook.com/duy.khac.35380399'"><i class="fa-brands fa-facebook"></i> Facebook</button><br>
+                    <br>
+                    <button class="button" onclick="location.href='https://www.instagram.com/kduy_1.4?igsh=dzFya3Excm9tM2Fx'"><i class="fa-brands fa-instagram"></i> Instagram</button><br>
+                    <br>
+                    <button class="button" onclick="location.href='https://accounts.google.com/SignOutOptions?hl=vi&continue=https://mail.google.com/mail/&service=mail&ec=GBRAFw'"><i class="fa-solid fa-envelope"></i> Email</button><br>
+                    <br> &copy; 2024</p>
+                </div>
+
+                <div class="col-md-4">
+                    <a class="navbar-brand" href="index.html"><img src="Dshop.jpg" class="resized-image"></a>
+                    <p>Address: Thanh Hoa City</p>
+                    <p>Hotline: 0123456789</p>
+                    <p>By: Do Khac Duy</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src=""></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

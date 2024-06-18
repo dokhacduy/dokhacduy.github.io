@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DuyShops</title>
+    <title>Web Bán Hàng</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
-          <a class="navbar-brand" href="index.html"><img src="Dshop.jpg" class="resized-image"></a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
+          <a class="navbar-brand" href="index.html"><img src="Dshop.jpg" class="resized-image" alt=""></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -25,7 +25,7 @@
     </nav>
 
     <div class="container-sm">
-        <div class="row">
+        <div class="row text-center"> 
             <div class="col-md-4">
                 <div class="card">
                     <img src="https://www.sporter.vn/wp-content/uploads/2017/06/VN_Chelsea-10.jpg" class="card-img-top" alt="Áo bóng đá Chelsea xanh sân nhà">
@@ -89,17 +89,17 @@
         </div>
     </div>
             
-    <!-- Cart Modal -->
+    <!--Modal gio hang -->
     <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="cartModalLabel">Giỏ Hàng</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close btn btn-warning" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <ul id="cartItems" class="list-group">
-                        <!-- Items will be added here dynamically -->
+    <!-- Items will be added here dynamically| primary secondary success danger warning-->
                     </ul>
                 </div>
                 <div class="modal-footer">

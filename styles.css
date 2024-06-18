@@ -49,3 +49,6 @@ footer {
 h4{
     text-align: center;
 }
+#cartModal .modal-content {
+    background-color: #ffffff;
+}
